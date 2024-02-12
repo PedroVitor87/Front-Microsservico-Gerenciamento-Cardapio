@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Cadastro de Prato no cardápio</title>
+</head>
+<body>
+    <h2>CADASTRO DE PRATO</h2>
+    <form id="formPratos" onsubmit="formPrato(); return false;">
+        <label for="prato">Prato:</label>
+        <input type="text" id="dish_name" name="dish_name" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="valor">Preço:</label>
+        <input type="text" id="value" name="value" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div id="mensagemSucesso" style="display: none; color: #17b824; text-align: center; margin-top: 10px;">
+        Prato cadastrado com sucesso!
+    </div>
+    <script src="../js/cadastrarPrato.js"></script>
+</body>
+</html>
